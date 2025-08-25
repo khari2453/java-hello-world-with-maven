@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 echo 'Pulling code from GitHub...'
-                git branch: 'main', url: 'https://github.com/<your-username>/my-sample-app.git'
+                git branch: 'main', url: 'https://github.com/Akshiv20/java-hello-world-with-maven.git'
             }
         }
 
@@ -31,3 +31,4 @@ pipeline {
         }
     }
 }
+
