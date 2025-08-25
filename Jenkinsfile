@@ -26,9 +26,10 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying JAR to production...'
-                sh 'scp target/my-sample-app-1.0-SNAPSHOT.jar user@<prod-ip>:/apps/'
+                sh 'mkdir -p /tmp/apps && cp target/java-hello-world-with-maven-1.0-SNAPSHOT.jar /tmp/apps/'
             }
         }
     }
 }
+
 
